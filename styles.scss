@@ -44,15 +44,15 @@ ul {
     }
 }
 
-.nav { grid-area: nav  /* grid-column: 1;
+nav { grid-area: nav  /* grid-column: 1;
     grid-row: 5 / 5 */}
-.main { grid-area: main;
+main { grid-area: main;
          /*  grid-column: 2 / 4;
     grid-row: 2 / 5*/}
 .project { grid-area: project /* grid-column: 2 / 4;
     grid-row: 3 / 5*/ }
 
-.nav {
+nav {
     background-color: $lightgrey;
     display: inline;
 }

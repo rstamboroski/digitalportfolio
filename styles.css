@@ -39,14 +39,14 @@ ul {
   }
 }
 
-.nav {
+nav {
   -ms-grid-row: 1;
   -ms-grid-row-span: 3;
   -ms-grid-column: 1;
   grid-area: nav;
 }
 
-.main {
+main {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
@@ -63,7 +63,7 @@ ul {
   grid-area: project;
 }
 
-.nav {
+nav {
   background-color: #9fb1bc;
   display: inline;
 }
