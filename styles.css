@@ -1,48 +1,51 @@
 body {
     background-color: hsla(38, 8%, 81%, 1);
+    font-family: "Catamaran", "Open Sans", sans-serif;
+}
+
+a {
+    color: hsla(195, 83%, 16%, 1);
+}
+
+ul {
+    list-style-type: none;
 }
 
 .container {
+    margin: 0 auto;
+    float: left;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 100px 400px 100px 100px;
+    grid-template-columns: 150px 1fr;
+    grid-template-rows: repeat(3, 400px);
     grid-gap: 10px;
    
-    grid-template-areas: 'header header header'
-                         'nav project project'
-                         'nav footer footer';
+    grid-template-areas: 'nav main main'
+    'nav project project'
+    'nav project project';
    }
-   
-.header { grid-area: header }
-.nav { grid-area: nav }
-.project { grid-area: project }
-.footer { grid-area: footer }
 
-.nav {
-    width: 180px;
-    position: fixed
-    background-color: hsla(203, 18%, 68%, 1);
-}
-
-.contact {
+.container > * {
+    background: #eee;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
 }
 
+@media screen and (max-width: 768px) {
+    .container {
+      grid-template-areas: 'nav nav nav'
+      'main main main'
+      'project project project';
+    }
+}
+   
+.nav { grid-area: nav }
+.project { grid-area: project }
+
+.nav {
+    background-color: hsla(203, 18%, 68%, 1);
+}
+
 .contact img {
     max-height: 30px;
   }
-
-@media screen and (max-width: 768px) {
-    .container {
-      grid-template-areas: 'header header header'
-                           'project project project'
-                           'nav nav nav'
-                           'footer footer footer';
-    }
-  }
-
-body {
-    font-family: "Catamaran", "Open Sans", sans-serif;
-}
