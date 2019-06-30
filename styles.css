@@ -14,6 +14,22 @@
 .project { grid-area: project }
 .footer { grid-area: footer }
 
+.nav {
+    width: 180px;
+    position: fixed
+    color: hsla(203, 18%, 68%, 1);
+}
+
+.contact {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.contact img {
+    max-height: 30px;
+  }
+
 @media screen and (max-width: 768px) {
     .container {
       grid-template-areas: 'header header header'
