@@ -93,8 +93,11 @@ nav {
 .about {
     padding: 20px;
     h1 {
-        font-size: 500%;
-    }    
+        font-size: 400%;
+    }
+    h2 {
+        color: $highlight;
+    }
 }
 
 main {

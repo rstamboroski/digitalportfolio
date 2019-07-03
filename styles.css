@@ -118,7 +118,11 @@ nav {
 }
 
 .about h1 {
-  font-size: 500%;
+  font-size: 400%;
+}
+
+.about h2 {
+  color: #073a4b;
 }
 
 main {
