@@ -1,0 +1,22 @@
+title: Meu portfolio
+author: Rafaela Stamboroski
+email: rstamboroski@gmail.com
+description: > # this means to ignore newlines until "exclude"
+  Product designer experienced in digital products and agile teams.
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - .gitignore
+
+# Date format for posts
+# refer to http://shopify.github.io/liquid/filters/date/ if you
+# want to customize this
+date_format: "%b %-d, %Y"
+
+# generate social links in footer
+social_links:
+  twitter: rstamboroski
+  github:  rstamboroski
+  # facebook:
